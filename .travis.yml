@@ -10,5 +10,11 @@ branches:
 before_install:
 - chmod +x gradlew
 
+install:
+- ./gradlew assemble
+
+script:
+- ./gradlew check
+
 after_sucess:
 - echo "`find ./ -name "*.war"`"
