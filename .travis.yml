@@ -13,5 +13,5 @@ before_install:
 script:
 - ./gradlew check
 
-after_sucess:
+after_success:
 - echo "`find ./ -name "*.war"`"
